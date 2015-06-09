@@ -141,7 +141,11 @@ obj-$(CONFIG_PM_DEVFREQ)	+= devfreq/
 #MobiCore
 obj-$(CONFIG_MOBICORE_SUPPORT)  += gud/
 
-obj-$(CONFIG_CORESIGHT)         += coresight/
+obj-$(CONFIG_CORESIGHT)		+= coresight/
+obj-$(CONFIG_ESOC)		+= esoc/
+
+#sensor_class
+obj-$(CONFIG_SENSORS)		+= sensors/
 
 #1Seg
 obj-$(CONFIG_LGE_BROADCAST_ONESEG) += broadcast/
